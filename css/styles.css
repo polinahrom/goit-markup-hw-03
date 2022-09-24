@@ -31,6 +31,8 @@ body {
 
 li {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -52,10 +54,13 @@ section.specifics {
 
 section.works {
     background-color: var(--header-bg-color);
+    padding-bottom: 94px;
 }
 
 section.team {
     background-color: var(--second-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 footer {
@@ -95,6 +100,7 @@ footer {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 
 .contact-footer a:hover,
@@ -112,9 +118,20 @@ footer {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40;
+    padding-top: 200px;
+    padding-left: 237px;
+    padding-right: 237px;
+    padding-bottom: 40px;
+    background-color: var(--footer-bg-color);
+}
+.hero {
+    text-align: center;
 }
 
 .hero button {
+    display: inline-block;
     color: var(--second-text-color);
     background-color: var(--acceny-color);
     font-family: inherit;
@@ -124,7 +141,12 @@ footer {
     text-align: center;
     letter-spacing: 0.06em;
     border-color: transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    margin-bottom: 200px;
 }
+
 
 button:hover,
 button:focus {
@@ -132,16 +154,25 @@ button:focus {
 }
 
 .visually-hidden {
+    display: inline-block;
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 103px;
+    height: 38px;
     margin: -1px;
-    border: 0;
-    padding: 0;
+    border: 1px solid transparent;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    border-radius: 4px;
+    padding: 6px 22px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.specifics {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .specifics-title {
@@ -151,6 +182,9 @@ button:focus {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 94px;
 }
 
 .specifics-text {
@@ -158,6 +192,8 @@ button:focus {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 94px;
+
 }
 
 .works-title {
@@ -167,6 +203,7 @@ button:focus {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .person {
@@ -187,7 +224,6 @@ button:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
@@ -215,7 +251,10 @@ button:focus {
 }
 
 /* С€СЂРёС„С‚ */
-
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 address {
     font-style: normal;
 }
@@ -335,4 +374,7 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
+}
+.container {
+    width: 1200;
 }
