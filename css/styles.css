@@ -1,15 +1,3 @@
-/* С‚РµРєСЃС‚ РєРѕР»С–СЂ #757575
-#212121 РѕСЃРЅРѕРІРЅРёР№ РєРѕР»С–СЂ
-#000000 Р»РѕРіРѕ 
-РєРѕР»С–СЂ РІРёРґС–Р»РµРЅРЅСЏ #2196F3
-#FFFFFF Р±С–Р»РёР№
-С„РѕРЅ РѕСЃРЅРѕРІРЅРёР№ #F5F5F5
-С„РѕРЅ РґРѕРґР°С‚РєРѕРІРёР№ #F5F4FA;
-С„РѕРЅ #2F303A;
-С„РѕРЅ С…РѕРІРµСЂ РєРЅРѕРїРєР° #188ce8
-С†РІРµС‚ С‚РµРєСЃС‚Р° С„СѓС‚РµСЂ rgba(255, 255, 255, 0.6);
- */
-
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -29,8 +17,12 @@ body {
     color: var(--title-text-color);
 }
 
-li {
+ul,li {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,p {
     padding: 0;
     margin: 0;
 }
@@ -42,6 +34,7 @@ a {
 /* background */
 header {
     background-color: var(--header-bg-color);
+    border: 1px solid #ECECEC;
 }
 
 section.hero {
@@ -101,6 +94,8 @@ footer {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .contact {
     display: flex;
@@ -302,8 +297,10 @@ button:focus {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .name {
@@ -313,6 +310,8 @@ button:focus {
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .job-title {
@@ -321,6 +320,7 @@ button:focus {
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .examples-title {
@@ -342,15 +342,16 @@ button:focus {
 /* С€СЂРёС„С‚ */
 .container-footer {
     width: 1230px;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: block;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container-footer.logo {
-padding-left: 40px;
+padding-top: 60px;
+
 }
 .footer {
     padding-top: 60px;
@@ -402,7 +403,9 @@ div.container-btn {
     border-color: transparent;
     border-radius: 4px;
 }
-
+.nav-btn {
+    display: inline;
+}
 .filters .btn:hover,
 .filters .btn:focus {
     background-color: var(--acceny-color);
@@ -411,14 +414,16 @@ div.container-btn {
 }
 
 /* СѓРґР°Р»РёР» С„РѕРЅС‚ С„РµРјРёР»Рё */
-.div.container-card {
+.container-flex {
     width: 1230;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-
+.card {
+    flex-basis: calc((100% - 2 * 30px)/ 3);
+}
 .div.container-flex { 
     display: flex;
     flex-wrap: wrap;
